@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_ERA_EVA_6_ASSETS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOl-ZD-Peg">
+                                <rect key="frame" x="277" y="406" width="46" height="30"/>
+                                <state key="normal" title="Mi boton" backgroundImage="button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="moradobutton"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="148" y="418" width="104" height="33"/>
+                                </variation>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plat1_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gLu-GM-kAG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hbF-5U-t2Z">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <connections>
+                                    <action selector="miValor:" destination="BYZ-38-t0r" eventType="valueChanged" id="zmq-aa-cyJ"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6z-0w-QAB">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gLu-GM-kAG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4CE-Qq-wvZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gLu-GM-kAG" secondAttribute="trailing" constant="60" id="CCN-pT-U29"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x6z-0w-QAB" secondAttribute="trailing" id="FUp-Xz-Qu6"/>
+                            <constraint firstItem="x6z-0w-QAB" firstAttribute="top" secondItem="hbF-5U-t2Z" secondAttribute="bottom" constant="51" id="GrI-ei-Yxl">
+                                <variation key="widthClass=compact" constant="37"/>
+                            </constraint>
+                            <constraint firstAttribute="leadingMargin" secondItem="x6z-0w-QAB" secondAttribute="leading" id="N9k-Nv-qeG"/>
+                            <constraint firstItem="gLu-GM-kAG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="PDu-uw-452"/>
+                            <constraint firstItem="gLu-GM-kAG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="RpK-rq-Rja"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hbF-5U-t2Z" secondAttribute="trailing" id="eCG-HX-g3W"/>
+                            <constraint firstItem="hbF-5U-t2Z" firstAttribute="top" secondItem="gLu-GM-kAG" secondAttribute="bottom" constant="92" id="qbp-hr-maV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="hbF-5U-t2Z" secondAttribute="leading" id="rmM-Gy-E3S"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gLu-GM-kAG"/>
+                                <exclude reference="hbF-5U-t2Z"/>
+                                <exclude reference="x6z-0w-QAB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="eCG-HX-g3W"/>
+                                <exclude reference="qbp-hr-maV"/>
+                                <exclude reference="rmM-Gy-E3S"/>
+                                <exclude reference="FUp-Xz-Qu6"/>
+                                <exclude reference="GrI-ei-Yxl"/>
+                                <exclude reference="N9k-Nv-qeG"/>
+                                <exclude reference="4CE-Qq-wvZ"/>
+                                <exclude reference="CCN-pT-U29"/>
+                                <exclude reference="PDu-uw-452"/>
+                                <exclude reference="RpK-rq-Rja"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gLu-GM-kAG"/>
+                                <include reference="hbF-5U-t2Z"/>
+                                <include reference="x6z-0w-QAB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="eCG-HX-g3W"/>
+                                <include reference="qbp-hr-maV"/>
+                                <include reference="rmM-Gy-E3S"/>
+                                <include reference="FUp-Xz-Qu6"/>
+                                <include reference="GrI-ei-Yxl"/>
+                                <include reference="N9k-Nv-qeG"/>
+                                <include reference="4CE-Qq-wvZ"/>
+                                <include reference="CCN-pT-U29"/>
+                                <include reference="PDu-uw-452"/>
+                                <include reference="RpK-rq-Rja"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblValor" destination="x6z-0w-QAB" id="o3l-Sp-sKk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694.5" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="33" height="33"/>
+        <image name="moradobutton" width="33" height="32"/>
+        <image name="plat1_logo" width="100" height="100"/>
+    </resources>
+</document>
