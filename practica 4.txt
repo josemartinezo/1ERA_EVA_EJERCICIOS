@@ -1,0 +1,29 @@
+PRACTICA 4
+func mandaMensaje(){
+	print("Hola Mundo")
+}
+
+mandaMensaje()
+
+func devuelveValor() -> Int{
+	return 10
+}
+	let iVal = devuelveValor()
+	print(iVal)
+
+func mandaMensaje2(mensaje: String){
+	print(mensaje)
+}
+mandaMensaje2(mensaje: "Hola mundo cruel")
+
+func mandaMensaje3(_ mensaje: String){
+	print(mensaje)
+}
+
+mandaMensaje3("Hola mundo curel 3")
+
+func mandaMensaje4(introduceTuMensaje mensaje: String){
+	print(mensaje)
+}
+
+mandaMensaje4(introduceTuMensaje: "USO DE ALIAS")
