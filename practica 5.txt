@@ -1,0 +1,33 @@
+practica 5
+//clases y herencia
+
+class MiClase{
+	init(){
+		print("CONSTRUCTOR SIN ARGUMENTOS")
+	}
+	func mandarMensaje(_ mensaje: String){
+		print(mensaje)
+	}
+}
+
+let mcObj = MiClase()
+mcObj.mandarMensaje("Holis mundo")
+
+class MiOtraClase: MiClase{
+	
+}
+
+let mocObjeto = MiOtraClase()
+mocObjeto.mandarMensaje("OTRO HOLA MUNDO")
+
+class MiOtraOtraClase: MiClase{
+	override init(){
+		print("OTRO INITIALIZER")
+		super.init()
+	}
+}
+let moocObjeto = MiOtraOtraClase()
+
+
+
+
