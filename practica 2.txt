@@ -1,0 +1,15 @@
+//tipos wrapped - unwrapped
+
+var sCade: String? 
+sCade = nil
+sCade = "Hola mundo"
+print(sCade!)
+
+var iVal: Int?
+iVal = nil
+
+var sCade2: String!
+sCade2 = nil
+sCade2 = "QUIBO"
+print(sCade2)
+
