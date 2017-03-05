@@ -1,0 +1,23 @@
+var sCade: String
+sCade = "Hola Mundo"
+//sCade += "xD"
+var sCade2 = "Hola mundo2"
+let miConstante: Int=7
+print(sCade)
+print(sCade2)
+
+print("El valor de la constante es: \(miConstante)")
+print(miConstante)
+var sCade3, sCade4, sCade5: String
+var iVal = 100
+var dValDoble = 5.5
+print("La suma es = \(Double(iVal)+dValDoble)")
+var sNom = "JOSE"
+print("Mi Nombre es: \(sNom)")
+var sCon = "Hola"
+//sCon = sCon + "" +"mundo"
+sCon += " "
+sCon += "mundo"
+sCon += " "
+sCon += "cruel"
+print(sCon)
