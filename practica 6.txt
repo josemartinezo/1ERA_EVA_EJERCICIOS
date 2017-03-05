@@ -1,0 +1,28 @@
+Practica 6
+//protocol --> interfaces
+
+protocol hacerAlgo {
+	func mandarMensaje()
+
+}
+
+class ImplementarProtocolo: hacerAlgo{
+	init(){
+		print("SIN ARGUMENTOS")
+	}
+	init(mensaje: String){
+		print(mensaje)
+	}
+	init(mensaje: String, veces: Int){
+		for _ in 0...veces{
+			print(mensaje)
+		}
+	}
+	func mandarMensaje(){
+		print("HOLA MUNDO")
+	}	
+}
+
+let ipObj = ImplementarProtocolo(mensaje: "HOLA", veces: 5)
+ipObj.mandarMensaje()
+
